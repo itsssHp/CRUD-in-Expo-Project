@@ -41,5 +41,47 @@ export default function SignInScreen({ navigation }: Props) {
         <Text style={signInStyles.link}>Don't have an account? Sign Up</Text>
       </TouchableOpacity>
     </View>
+    
   );
 }
+
+const signInStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: 24,
+    backgroundColor: '#f2f2f2',
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    marginBottom: 24,
+    textAlign: 'center',
+    color: '#333',
+  },
+  input: {
+    backgroundColor: '#fff',
+    padding: 12,
+    borderRadius: 8,
+    marginBottom: 12,
+    borderColor: '#ccc',
+    borderWidth: 1,
+  },
+  button: {
+    backgroundColor: '#3b82f6',
+    padding: 14,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginTop: 8,
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  link: {
+    color: '#3b82f6',
+    marginTop: 12,
+    textAlign: 'center',
+  },
+});
